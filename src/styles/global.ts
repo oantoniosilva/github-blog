@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import firaCode from "../assets/fonts/FiraCode-Regular.woff";
+import { createGlobalStyle } from 'styled-components'
+import firaCode from '../assets/fonts/FiraCode-Regular.woff'
 
 export const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -16,21 +16,21 @@ export const GlobalStyles = createGlobalStyle`
       width: 0.45rem;
     }
     ::-webkit-scrollbar-track {
-      background: ${({ theme }) => theme.colors["base-border"]}
+      background: ${({ theme }) => theme.colors['base-border']}
     }
     ::-webkit-scrollbar-thumb {
-      background: ${({ theme }) => theme.colors["brand-blue"]};
+      background: ${({ theme }) => theme.colors['brand-blue']};
       border-radius: 999px;
     }
   }
   body {
-    background: ${({ theme }) => theme.colors["base-background"]};
-    color: ${({ theme }) => theme.colors["base-text"]};
+    background: ${({ theme }) => theme.colors['base-background']};
+    color: ${({ theme }) => theme.colors['base-text']};
     -webkit-font-smoothing: antialiased;
   }
   body, input, textarea, button {
     font: 400 ${({ theme }) =>
-      theme.textSizes["text-text-m"]} 'Nunito', sans-serif;
+      theme.textSizes['text-text-m']} 'Nunito', sans-serif;
       line-height: 160%;
   }
   ul {
@@ -43,4 +43,4 @@ export const GlobalStyles = createGlobalStyle`
   button {
     cursor: pointer;
   }
-`;
+`
